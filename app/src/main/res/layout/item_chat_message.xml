@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Sender message layout -->
+    <RelativeLayout
+        android:id="@+id/layoutSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/chat_bubble_user"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textMessageSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Sample Sender Message" />
+
+    </RelativeLayout>
+
+    <!-- Chatbot message layout -->
+    <RelativeLayout
+        android:id="@+id/layoutChatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/chat_bubble_chatbot"
+        android:padding="8dp"
+        android:layout_below="@id/layoutSender">
+
+        <TextView
+            android:id="@+id/textMessageChatbot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000200"
+            android:text="Sample Chatbot Message" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

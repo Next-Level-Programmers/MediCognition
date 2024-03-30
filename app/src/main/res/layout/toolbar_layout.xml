@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/searchbar_bg"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:layout_marginTop="20dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <!-- Menu Icon -->
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_menu_24"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/more_menu" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="15dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="Search"
+        android:textColorHint="@color/black"
+        android:hint="@string/search"
+        android:gravity="center"
+        android:inputType="text"
+        android:background="@drawable/no_bottom_line"/>
+
+    <!-- Search Icon -->
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_search_24"
+
+        android:layout_marginStart="1dp"
+        android:contentDescription="@string/search" />
+
+    <!-- Avatar -->
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_person_24"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/profile" />
+
+</LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
